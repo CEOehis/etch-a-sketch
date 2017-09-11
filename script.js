@@ -1,4 +1,4 @@
-var container = document.querySelector('.container')
+var container = document.querySelector('.box')
 for (var i = 0; i < 16; i++) {
   // create new div element
   var row = document.createElement('div')
@@ -11,3 +11,10 @@ for (var i = 0; i < 16; i++) {
 
   container.appendChild(row)
 }
+
+var grid = document.getElementsByClassName('grid')
+// for (var i = 0; i < grid.length; i++) {
+//   grid[i].addEventListener('mouseover', function () {
+//     grid[i].setAttribute('class', 'grid hovered')
+//   })
+// }
