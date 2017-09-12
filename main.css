@@ -21,6 +21,7 @@ button {
     font-weight: bold;
     padding: 0px 20px;
     border-radius: 5px;
+    box-shadow: 1px 1px 5px #2e2e2e;
 }
 
 .grid-container {
@@ -51,5 +52,5 @@ button {
   opacity: 0.3;
 }
 .hovered {
-  background-color: red;
+  background-color: #F2F2F2;
 }
