@@ -5,10 +5,11 @@ function generateGrid (pixels) {
   for (var i = 0; i < pixels; i++) {
     var row = document.createElement('div')
     for (var j = 0; j < pixels; j++) {
-      var dimen = (400 / pixels)
+      var dimen = (400 / pixels).toFixed(4)
+      row.setAttribute('style', 'height:' + dimen + 'px; ')
       var newDiv = document.createElement('div')
       newDiv.setAttribute('class', 'grid-square')
-      newDiv.setAttribute('style', 'width:' + dimen + 'px;' + 'height:' + dimen + 'px;')
+      newDiv.setAttribute('style', 'width:' + dimen + 'px; ' + 'height:' + dimen + 'px; ')
       row.appendChild(newDiv)
     }
     container.appendChild(row)

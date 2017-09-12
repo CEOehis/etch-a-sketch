@@ -20,37 +20,31 @@ button {
     color: #898989;
     font-weight: bold;
     padding: 0px 20px;
-    /*margin: 10px 0px 15px 0px;*/
     border-radius: 5px;
 }
 
 .grid-container {
   display: flex;
   align-items: center;
-  /*height: 100%;*/
   justify-content: center;
-  /*align-content: center;*/
   flex-flow: column;
 }
 
 .grid {
   width: 400px;
-  /*margin: 0 auto;*/
   height: 400px;
   background-color: #9e9e9e;
   box-shadow: 0px 10px 50px #2e2e2e;
   border: 5px solid #9e9e9e;
+  font-size: 0px;
 }
 
 .grid-square {
-  /*width: 25px;*/
-  /*border: 1px solid #9e9e9e;*/
   display: inline-block;
-  /*height: 25px;*/
   background-color: #9e9e9e;
-  vertical-align: middle;
   text-align: center;
   border-radius: 3px;
+  font-size: 16px;
 }
 
 .grid-square:hover {
@@ -59,9 +53,3 @@ button {
 .hovered {
   background-color: red;
 }
-
-button {
-  /*margin: 20px;*/
-  align-self: center;
-}
-
