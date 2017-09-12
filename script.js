@@ -1,20 +1,30 @@
-var container = document.querySelector('.box')
-for (var i = 0; i < 16; i++) {
-  // create new div element
-  var row = document.createElement('div')
-  for (var j = 0; j < 16; j++) {
-    var newDiv = document.createElement('div')
-    // newDiv.textContent = j
-    newDiv.setAttribute('class', 'grid')
-    row.appendChild(newDiv)
+function generateGrid (pixels) {
+  var container = document.querySelector('.grid')
+  for (var i = 0; i < pixels; i++) {
+    var row = document.createElement('div')
+    for (var j = 0; j < pixels; j++) {
+      var newDiv = document.createElement('div')
+      newDiv.setAttribute('class', 'grid-square')
+      row.appendChild(newDiv)
+    }
+    container.appendChild(row)
   }
-
-  container.appendChild(row)
+  createHover()
 }
 
-var grid = document.getElementsByClassName('grid')
-// for (var i = 0; i < grid.length; i++) {
-//   grid[i].addEventListener('mouseover', function () {
-//     grid[i].setAttribute('class', 'grid hovered')
-//   })
-// }
+var setPixelButton = document.getElementById('set-pixel')
+setPixelButton.addEventListener('click', function () {
+  alert('clicked')
+  generateGrid(10)
+})
+
+function hoverEffect () {
+  this.classList.add('hovered')
+}
+
+function createHover () {
+  var grid = document.getElementsByClassName('grid-square')
+  for (var i = 0; i < grid.length; i++) {
+    grid[i].addEventListener('mouseover', hoverEffect)
+  }
+}

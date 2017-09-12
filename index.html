@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>etch-a-sketch</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  <div class="container">
-  <div class="box">
-  </div>
-  </div>
 
+<head>
+    <title>etch-a-sketch</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="generateGrid(16)">
+  <div class="container">
+    <h1>Etch-A-Sketch</h1>
+    <nav>
+      <button id="set-pixel">click</button>
+    </nav>
+    <div class="grid-container">
+      <div class="grid">
+      </div>
+    </div>
+  </div>
   <script src="script.js" type="text/javascript"></script>
 </body>
+
 </html>
