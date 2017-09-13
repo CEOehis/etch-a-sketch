@@ -17,6 +17,13 @@ function generateGrid (pixels) {
   createHover()
 }
 
+function clearGrid () {
+  var pixelSize = document.querySelector('.grid').childElementCount
+  generateGrid(pixelSize)
+}
+var clearButton = document.getElementById('clear-pixel')
+clearButton.addEventListener('click', clearGrid)
+
 var setPixelButton = document.getElementById('set-pixel')
 setPixelButton.addEventListener('click', getPixel)
 
