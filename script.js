@@ -15,6 +15,7 @@ function generateGrid (pixels) {
     container.appendChild(row)
   }
   createHover()
+
   var clearButton = document.getElementById('clear-pixel')
   clearButton.addEventListener('click', clearGrid)
 
@@ -34,6 +35,8 @@ function getPixel () {
 
 function hoverEffect () {
   this.classList.add('hovered')
+  this.classList.add('vivify')
+  this.classList.add('pulsate')
 }
 
 function createHover () {
