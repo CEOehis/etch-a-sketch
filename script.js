@@ -15,17 +15,17 @@ function generateGrid (pixels) {
     container.appendChild(row)
   }
   createHover()
+  var clearButton = document.getElementById('clear-pixel')
+  clearButton.addEventListener('click', clearGrid)
+
+  var setPixelButton = document.getElementById('set-pixel')
+  setPixelButton.addEventListener('click', getPixel)
 }
 
 function clearGrid () {
   var pixelSize = document.querySelector('.grid').childElementCount
   generateGrid(pixelSize)
 }
-var clearButton = document.getElementById('clear-pixel')
-clearButton.addEventListener('click', clearGrid)
-
-var setPixelButton = document.getElementById('set-pixel')
-setPixelButton.addEventListener('click', getPixel)
 
 function getPixel () {
   var pixel = prompt('enter grid size:')
