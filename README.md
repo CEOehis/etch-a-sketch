@@ -1,3 +1,3 @@
-etch-a-sketch
-etch-a-sketch
-# etch-a-sketch
+**etch-a-sketch**
+
+A doodler's paradise
